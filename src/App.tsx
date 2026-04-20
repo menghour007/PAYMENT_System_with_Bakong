@@ -96,8 +96,6 @@ const PRODUCTS: Product[] = [
 const categories = [
   { label: 'Drone', icon: Drone },
   { label: 'Camera', icon: Camera },
-  { label: 'Headphones', icon: Headphones },
-  { label: 'Smart Watch', icon: Watch },
   { label: 'Virtual Reality', icon: Gamepad2 },
   { label: 'Accessories', icon: Package },
 ];
@@ -418,33 +416,20 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#f6f7fb] text-slate-900">
-      <div className="mx-auto w-full max-w-screen-2xl px-3 pb-28 pt-3 sm:px-4 md:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-screen-2xl px-3 pb-2 pt-3 sm:px-4 md:px-6 lg:px-8">
         <header className="sticky top-0 z-20 bg-[#f6f7fb]/95 pb-3 backdrop-blur">
           <div className="mx-auto max-w-7xl overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm">
             <div className="flex flex-col gap-3 px-4 py-4 lg:flex-row lg:items-center lg:gap-4 lg:px-6">
               <div className="flex items-center justify-between gap-3 lg:min-w-[180px]">
                 <div className="text-3xl font-black tracking-tight text-slate-800">
-                  Voltura<span className="text-blue-600">.</span>
+                  CS_Drone<span className="text-blue-600">.</span>
                 </div>
                 <button className="rounded-xl border border-slate-200 p-2 lg:hidden">
                   <Menu className="h-5 w-5" />
                 </button>
               </div>
 
-              <div className="hidden items-center gap-3 lg:flex">
-                <button className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-700">
-                  All Categories
-                </button>
-
-                <div className="flex min-w-[320px] xl:min-w-[420px] items-center gap-3 rounded-2xl border border-slate-200 px-4 py-3">
-                  <Search className="h-4 w-4 text-slate-400" />
-                  <input
-                    className="w-full bg-transparent text-sm outline-none"
-                    placeholder="Search drone, battery, camera..."
-                  />
-                  <Mic className="h-4 w-4 text-slate-400" />
-                </div>
-              </div>
+              
 
               <div className="hidden lg:ml-auto lg:flex lg:items-center lg:gap-6">
                 <div className="text-sm">
@@ -467,15 +452,6 @@ export default function App() {
                   )}
                 </button>
               </div>
-
-              <div className="flex gap-2 lg:hidden">
-                <button className="rounded-xl border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700">
-                  Categories
-                </button>
-                <button className="flex-1 rounded-xl border border-slate-200 px-3 py-2 text-left text-sm text-slate-400">
-                  Search drone...
-                </button>
-              </div>
             </div>
 
             <div className="border-t border-slate-100">
@@ -487,12 +463,6 @@ export default function App() {
                       {label}
                     </button>
                   ))}
-                </div>
-
-                <div className="hidden md:flex items-center gap-6 text-sm text-slate-700">
-                  <button>Blog</button>
-                  <button>Pages</button>
-                  <button>Get help</button>
                 </div>
               </div>
             </div>
@@ -529,14 +499,6 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <button className="rounded-2xl bg-blue-600 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-blue-600/20 hover:bg-blue-700">
-                  Buy Zypher X1
-                </button>
-                <button className="rounded-2xl border border-slate-300 bg-white px-7 py-4 text-base font-semibold text-slate-800 hover:bg-slate-50">
-                  Watch video
-                </button>
-              </div>
             </div>
 
             <div className="relative flex items-center justify-center">
