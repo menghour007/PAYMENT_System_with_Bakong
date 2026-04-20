@@ -1,0 +1,5 @@
+{
+  "name": "Bakong KHQR Payment Demo",
+  "description": "A demo application showcasing Bakong KHQR payment integration with a React frontend and Express backend.",
+  "requestFramePermissions": []
+}
