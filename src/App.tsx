@@ -629,14 +629,16 @@ export default function App() {
               </div>
               <div className="mt-3 space-y-2 text-sm text-slate-600">
                 <div>Phone: 011 289 264</div>
-                <a
-                  href="https://t.me/yourtelegramusername"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="block text-right font-bold text-slate-700 hover:text-blue-600"
-                >
-                  Telegram: @yourtelegramusername
-                </a>
+                <div>
+                  <a
+                      href="https://t.me/menghourzz"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-right font-bold text-slate-700 hover:text-blue-600"
+                    >
+                      Telegram: @menghourzz
+                    </a>
+                </div>
                 <div>Email: csdronestore@example.com</div>
                 <div>Location: Phnom Penh, Cambodia</div>
               </div>
